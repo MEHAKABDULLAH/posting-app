@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+  }
+  
+  body {
+    font-family: Arial;
+    /* Light background for contrast */
+  } 
+  .banner{
+    display: inline;
+  }
+ h2{
+ font-weight: bold;
+ } 
+ 
+
+
+  .nav{
+   margin-left: 10px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar .nav-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.8em;
+    }
+  
+    .main-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .form input {
+      font-size: 1em;
+    }
+  
+    .form .btn {
+      font-size: 1em;
+      padding: 10px 1px;
+    }
+  
+    #postsGrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .post {
+      padding: 10px;
+    }
+  }
+  /* changing css */
+  
+  
+  .first {
+    width: 100%;
+  }
+  
+  .banner {
+    display: flex;
+    justify-content: space-between; /* Align items to the ends */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add some padding */
+    background-color: #f8f9fa;
+     /* Background color for visibility */
+  }
+  
+  .profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic {
+    margin-right: 10px; /* Space between image and name */
+  }
+  
+  .nav {
+    margin-left: 80px; /* Space between nav items */
+    text-decoration: none; /* Remove underline */
+    color: #000; /* Text color */
+  }
+  
+  .nav:hover {
+    color: black; /* Change color on hover */
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 768px) {
+    .banner {
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+  
+    .nav {
+        margin: 5px 0; /* Space between nav items vertically */
+    }
+  
+    .profile {
+        margin-bottom: 10px; /* Space below the profile section */
+    }
+  
+    .profile-pic {
+        margin-right: 0; /* Remove right margin on mobile */
+    }
+  }
+  
+  /* Position the profile image to the right */
+  @media (min-width: 769px) {
+    .profile {
+        margin-left: auto; /* Push profile to the right */
+    }
+  }
+  
+  h1{
+    color: purple;
+    font-weight: bolder;
+  }
+  
+  
+  /* endchanging */
+  
+  
+  .nav{
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    padding-bottom: 20px;
+    
+    padding-left: 14px;
+  }
+  i{
+    margin-right: 5px;
+    color: purple;
+  }
+  #logoutBtn{
+border: none;
+font-weight: bolder;
+color: purple;
+   padding-left: 18px;
+   padding-right: 18px;
+   border-radius: 4px;
+   /* padding-top: 2px; */
+   float: right;
+
+   
+
+  }
+ 
+
+
+
+/* Main Content */
+#mainContent {
+  max-width: 800px; /* Limit the width of the main content */
+  margin: 20px auto; /* Center the content */
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Blog Form */
+.blog-form {
+  margin-bottom: 20px;
+}
+
+.blog-form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.blog-form input[type="text"],
+.blog-form textarea,
+.blog-form select {
+  width: 100%; /* Full width */
+  padding: 10px;
+  margin: 10px 0; /* Space between elements */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.blog-form button {
+  width: 100%; /* Full width */
+  padding: 10px;
+  background-color: purple; /* Bootstrap primary color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.blog-form button:hover {
+  background-color: rgb(185, 40, 185); /* Darker shade on hover */
+}
+
+/* Search Bar */
+.search-bar {
+  margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+  width: 100%; /* Full width */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+/* Blogs Container */
+#blogsContainer {
+  margin-top: 20px;
+}
+
+#blogsContainer h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Blog Post Styles */
+.blog-post {
+  background: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.login{
+  background-color: purple;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  border: none;
+  margin-left: 27px;
+  border-radius: 6px;
+}
+.blog-post h3 {
+  margin: 0 0 5px;
+  font-size: 20px;
+}
+
+.blog-post small {
+  color: #1d1a1a;
+  font-size: 12px;
+}
+
+.blog-post p {
+  margin: 10px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .blog-form h2,
+  #blogsContainer h2 {
+      font-size: 20px; /* Smaller font size for mobile */
+  }
+
+  .blog-form button {
+      font-size: 14px; /* Smaller button text */
+  }
+
+  .search-bar input[type="text"] {
+      font-size: 14px; /* Smaller search input text */
+  }
+}
+#edit{
+  background-color: purple;
+  color: white;
+  border: none;
+  padding: 10px;
+  border: 6px;
+}
+#delete{
+
+  background-color: purple;
+  color: white;
+  border: none;
+padding: 10px;
+  border: 6px;
+}
